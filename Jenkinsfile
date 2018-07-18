@@ -5,6 +5,10 @@ pipeline {
         maven 'mvn-3.5.4'
     }
 
+    environment {
+        PATH = "invalid path"
+    }
+
     stages {
         stage('Build') {
             steps {
