@@ -3,10 +3,7 @@ pipeline {
 
     tools {
         maven 'mvn-3.5.4'
-    }
-
-    environment {
-        PATH = "invalid path"
+        jdk 'jdk-10.0.2'
     }
 
     stages {
