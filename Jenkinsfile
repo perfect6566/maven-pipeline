@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 pipeline {
     agent any
 
@@ -9,9 +11,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh "printenv"
-               sh "mvn clean package spring-boot:repackage"
+                sh "printenv"
+                sh "mvn clean test package spring-boot:repackage"
+                junit 'target/surefire-reports/**/*.xml'
             }
         }
+
     }
 }
