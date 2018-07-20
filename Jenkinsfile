@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh "printenv"
                 sh "mvn clean test package spring-boot:repackage"
-                junit 'target/surefire-reports/**/*.xml'
+                junit '**/target/surefire-reports/**/*.xml'
             }
         }
 
