@@ -30,7 +30,8 @@ pipeline {
                     buildOverBuild: true,
                     changeBuildStatus: true,
                     deltaComplexityCoverage: '19',
-                    deltaLineCoverage: '100'
+                    deltaLineCoverage: '100',
+                    minimumLineCoverage:'100'
             )
 
         }
