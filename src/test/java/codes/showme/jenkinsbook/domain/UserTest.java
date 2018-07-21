@@ -1,5 +1,7 @@
 package codes.showme.jenkinsbook.domain;
 
+import org.junit.Ignore;
+
 import static org.junit.Assert.*;
 
 public class UserTest {
@@ -16,6 +18,7 @@ public class UserTest {
 
 
 
+    @Ignore
     @org.junit.Test
     public void getFullName1() {
 
