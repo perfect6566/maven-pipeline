@@ -29,8 +29,8 @@ pipeline {
                     exclusionPattern: 'src/test*',
                     buildOverBuild: true,
                     changeBuildStatus: true,
-                    deltaLineCoverage: '69',
-                    minimumLineCoverage:'100'
+                    deltaLineCoverage: 69,
+                    minimumLineCoverage:100
             )
 
         }
