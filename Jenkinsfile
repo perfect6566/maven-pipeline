@@ -22,12 +22,12 @@ pipeline {
         always{
 //            junit 'target/surefire-reports/**/*.xml'
             junit(testResults: '**/target/surefire-reports/**/*.xml')
-//            jacoco(
-//                    execPattern: 'target/*.exec',
-//                    classPattern: 'target/classes',
-//                    sourcePattern: 'src/main/java',
-//                    exclusionPattern: 'src/test*'
-//            )
+            jacoco(
+                    execPattern: 'target/*.exec',
+                    classPattern: 'target/classes',
+                    sourcePattern: 'src/main/java',
+                    exclusionPattern: 'src/test*'
+            )
 
         }
     }
