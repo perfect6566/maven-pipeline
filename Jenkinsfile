@@ -31,7 +31,7 @@ pipeline {
                     changeBuildStatus: true,
                     deltaLineCoverage: '69',
                     minimumLineCoverage:'0',
-                    maximumLineCoverage: '100'
+                    maximumLineCoverage: '62'
             )
 
         }
