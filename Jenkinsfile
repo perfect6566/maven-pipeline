@@ -1,7 +1,9 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent any
+    agent {
+    label "awsagent"
+    }
 
     tools {
         maven 'mvn-3.5.4'
